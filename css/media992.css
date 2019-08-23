@@ -1,0 +1,142 @@
+@media screen and (max-width: 992px) {
+    .vk-link {
+        display: none;
+    }
+    .name {
+      display: block;
+    }
+    .time p {
+      display: block;
+    }
+    #menu {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .page__within {
+        display: flex;
+        flex-direction: column;
+    }
+    .slider-box {
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0;
+        margin-bottom: 30px;   
+    }
+    .slider-img {
+        display: inline-block;
+    }
+    .why-title:before {
+        margin-left: 307px;
+    }
+    .avatar {
+        margin-left: 50px;
+    }
+    .about-me {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about-me-text p:last-child {
+        text-align: center;
+    }
+    .container {
+        margin-bottom: 0;
+        padding: 0 15px;
+    }
+    .column-reverse {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .offer h2 {
+        font-size: 30px;
+    }
+    .offer p {
+        font-size: 16px;
+    }
+    .slider-box div {
+        display: block;
+        width: 100%;
+        text-align: center;
+    } 
+    .slider-box {
+        width: 100%;
+        margin: 0;
+    }
+    .slider-box div a {
+        font-size: 23px;
+    }
+    .why-border {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .why-title:before {
+        margin-left: 207px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 576px) {
+    .main-title {
+        font-size: 25px;
+    }
+    .button {
+        margin-left: 53px;
+        font-size: 16px;
+    }
+    .title {
+        font-size: 24px; 
+    }
+    .banner {
+        background-image: none;
+        min-height: 189px;
+        margin: 0;
+    }
+    .offer {
+        background-image: url(../images/bg-miniBanner.jpg);
+        border: none;
+    }
+    .price-button {
+        font-size: 16px;
+    }
+    .work-body {
+        font-size: 14px;
+        line-height: 31px;
+    }
+    .avatar {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .avatar img {
+        max-width: 300px;
+    }
+    .why-title {
+        font-size: 30px;
+        background-color:#8C93A3;
+        color: black;
+    }
+    .why-bg {
+        background-color: #f2f2f2;
+        margin: 0;
+    }
+    .why-title:before {
+        display: none;
+    }
+    .about-me-text {
+        margin: 15px;
+        padding: 0;
+    }
+    .why-title:before {
+        margin-left: 153px;
+    }
+  }

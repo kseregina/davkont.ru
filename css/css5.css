@@ -1,0 +1,616 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Literata', serif;
+}
+html {
+    overflow-x: hidden;
+}
+.hide {
+    display: none;
+}
+.header {
+    background-color: #61ABDF;
+}
+.top {
+    padding: 16px;
+}
+.vk-link {
+    margin: 18 auto;  
+}
+
+.contact-link {
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.name {
+    display: flex;
+}
+.name h1 {
+    font-size: 28px;
+    align-self: center;
+    color: black;
+}
+.name span {
+    color: #007bff;
+    font-weight: bold;
+    font-style: normal;
+    /* text-shadow: -1px 0 #B37667, 0 1px #B37667, 1px 0 black, 0 -1px black; */
+}
+
+.time p {
+    display: inline-block;
+    margin: 32px 0 5px 10px;
+    font-size: 22px;
+}
+.time a {
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+.nav-item {
+    margin: 0 25px;
+    font-size: 25px;
+}
+
+/*-------------------------------------------------------- menu button screen < 998  ------------------------------------------------- */
+
+
+#menu {
+    position: relative;
+    background-color: #8C93A3;
+    width: 100%;
+    height: 56px;
+    display: none;
+    position: sticky;
+    top: 0;
+    opacity: 0.9;
+    z-index: 100;
+}
+.c-humburger {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 76px;
+    height: 56px;
+    font-size: 0;
+    box-shadow: none;
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+}
+.c-humburger:focus{
+    outline: none;
+}
+.c-humburger span {
+    position: absolute;
+    display: block;
+    top: 24px;
+    left: 18px;
+    right: 18px;
+    height: 4px;
+    background: #fff;
+}
+.c-humburger span:before, .c-humburger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    content: "";
+    background:#fff;
+}
+.c-humburger span:before {
+    top: -12px;
+}
+.c-humburger span::after {
+    bottom: -12px;
+}
+.c-humburger-line span:before, .c-humburger-line span:after {
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0s;
+}
+.c-humburger-line span:before {
+    transition-property: top, transform;
+}
+.c-humburger-line span:after {
+    transition-property: bottom, transform;
+}
+.c-humburger-line.is-active {
+    background: #C6110D;
+}
+.c-humburger-line.is-active span {
+    background: none;
+}
+.c-humburger-line.is-active :before {
+    top: 0;
+    transform: rotate(45deg);
+    transition-delay: 0s, 0.3s;
+}
+.c-humburger-line.is-active :after {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition-delay: 0s, 0.3s;
+}
+.box-menu998 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.menu998 {
+
+    height: 500px;;
+    position:absolute;
+    top: 56px;
+    right: -330px;
+    padding-left: 20px;
+    display: flex;
+    align-items: stretch;
+    transition: 0.8s ease-in-out;
+}
+.menu998 a {
+    font-size: 22px;
+    line-height: 33px;
+}
+.menu998 li {
+    padding: 3px;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu998 li:hover {
+    padding: 3px;
+    opacity: 1;
+}
+
+
+/* -------------------------------------------------------------------- regular menu ------------------------------------------------------------- */
+
+.menu, .menu998 {
+    background-color: #8C93A3;
+    opacity: 0.9;
+}
+.menu li {
+    border: 2px solid #8C93A3;
+    line-height: 25px;
+    padding: 5px;
+    transition: 0.3s;
+}
+.menu a, .menu998 a {
+    color: #022742;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.menu li:hover {
+    border: 2px solid #535965;
+    border-radius: 10px;
+}
+.banner {
+    background-image: url(../images/isaa_1920x674.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 674px;
+}
+.offer {
+    border: 2px solid white;
+    background-color: rgba(20, 45, 128, 0.5);
+    color: #f8f9fa;
+    max-width: 650px;
+    max-height: 550px;
+    padding: 20px;
+}
+.offer h2 {
+    font-size: 50px;
+    text-align: center;
+}
+.offer p {
+    margin-top: 22px;
+    font-size: 22px;
+    text-align: center; 
+}
+.container {
+    
+    padding-bottom: 20px;
+}
+.container-fluid {
+    background-color: #f2f2f2;
+}
+.model-line {
+    height: 40px;
+    background-color: #979dac;
+
+}
+/* -----------------------------------------------------block form */
+
+.box {
+    margin: 0 auto;
+    margin-top: 38px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.box h3 {
+    font-size: 30px;
+    text-align: center;
+}
+.box sup {
+    color: red;
+}
+.form-group label {
+    display:block;
+    margin-bottom:6px;
+}
+.form-group input,.form-group textarea {
+    width:calc(100% - 24px);
+    font-size:16px;
+    padding:6px 12px;
+}
+.form-group {
+    margin-bottom:15px;
+}
+.form-group textarea {
+    resize:none;
+}
+.control-file {
+    margin-bottom: 20px;
+}
+.box button {
+    color: white;
+}
+.form-button {
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+/* ------------------------------------- popup for form------------------------------------------------ */
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .5);
+	display: none;
+}
+
+.popup {
+	position: absolute;
+	width: 300px;
+	height: 180px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	background-color: #FFF;
+}
+
+.close-popup {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.close-popup:before {
+	content: '';
+	background-color: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+
+.close-popup:after {
+	content: '';
+	background-color: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}
+/* ------------------------------------- 3 blocks of service ----------------------------------------- */
+
+.main-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+.service__image {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+.service__title {
+    font-size: 32px;
+    font-weight: bold;  
+}
+.service__text {
+    font-size: 20px;
+}
+
+.box button, .button {
+    background: linear-gradient(to top, #61ABDF, #135C90);
+    border: 1px solid #61ABDF;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 7px;
+    margin-top: 10px;
+    max-width: 250px;
+    text-align: center;
+}
+.button:hover {
+    border: 1px solid #135C90;
+    background: linear-gradient(to top, #135C90, #61ABDF);
+    cursor: pointer;
+}
+.box button, .button a {
+    text-decoration: none;
+    color: white;
+}
+
+.line {
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+/* ----------------------------------What does the work of a realtor include ----------------------- */
+
+.work-title {
+    color: #FF7A00;
+    font-size: 27px;
+    font-weight: bold;
+}
+.work-body {
+    font-size: 19px;
+    line-height: 41px;
+    text-align: left;
+}
+
+/*-----------------------------------some interesting articles----------------------------------------*/
+
+.article__link {
+    background-color: #61ABDF;
+}
+.article__text {
+    font-size: 25px;
+    color: #FF7A00;
+    font-weight: bold;
+}
+
+/*----------------------------------accordion-------------------------------------------*/
+.price-button:hover {
+    cursor: pointer; 
+}
+/* ----------------------------------Why do you need a realtor 3 blocks ----------------------------- */
+
+.slider-box {
+    list-style-type: none;
+    max-width: 1000px;
+    margin: 20px auto;
+    margin-top: 20px;
+}
+.slider-box div {
+    display: inline-block;
+    margin: -5px;
+    padding: 7px 31px;
+    background-color: #FFA64C;
+}
+.slider-box div:hover {
+    /* background-color: rgb(214, 114, 20); */
+    cursor: pointer;
+}
+.slider-box div a {
+    padding: 5px;
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+}
+.slider-head:active {
+    background-color: rgb(251, 251, 251);
+}
+.page__within {
+    display: flex;
+    justify-content: space-between;
+}
+.slider-img {
+    border-radius: 10px;
+    margin: 10px auto;
+    display: inline-block;
+    
+    max-width: 380px;
+}
+.slider-title {
+    color: #8D003B;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.slider-text {
+    font-size: 18px;
+    margin: 0 10px;
+    text-align: left;
+    padding: 15px;
+    align-self: center;
+    max-width: 657px;
+}
+.page::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+/* ---------------------------------------- Why people choose a private rialtor -------------------------------*/
+
+.why-title {
+    color: rgb(22, 53, 172);
+    font-size: 24px;
+}
+.why-body {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.why-border {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.why-title:before {
+    content: "";
+    background-image: url(../images/rub.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ccc;
+    display: block;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-left: 122px;
+    margin-bottom: 19px;
+}
+
+/* -------------------------------------------about realtor */
+.avatar div {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.avatar img {
+    border-radius: 20px;
+    max-width: 565px;
+}
+.about-me {
+    display: flex;
+    justify-content: space-between;
+}
+.about-me-text {
+    align-self: center;
+    text-align: left;
+    padding-left: 45px;
+    margin-top: 53px;
+}
+.about-me-text img {
+    max-width: 40px;
+    opacity: 0.8;
+    margin-top: 30px;
+}
+
+/* ------------------------------------------- Footer with contacts ----------------------------- */
+
+.contacts-footer img {
+    max-width: 90px;
+    margin-top:30px;
+}
+.contacts-footer p {
+    color: rgb(22, 53, 172);
+    font-size: 20px;
+    margin: 15px auto;
+}
+.contacts-footer a {
+    color: #222;
+}
+/* footer */
+footer {
+    font-size: 32px;
+    color:#fff;
+    padding: 20px;
+    background-color: #61ABDF;
+    text-align: center;
+}
+/* ЦЕНЫ */
+.price-head {
+    background-color: #61ABDF;
+    margin: 30px 0;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+.price-head__title{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+.price-head__subtitle {
+    color:#fff;
+    text-align: center;
+    font-size: 16px;
+}
+.price-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 21px;
+}
+.price-body {
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 15px;
+}
+.price-button {
+    font-size: 22px;
+    font-weight: 800;
+}
+.card-header:hover {
+    background-color: #FFA64C;
+    color: #fff;
+}
+/* carousel */
+.section a {
+    font-size: 20px;
+    color: #5D1B0C;
+}
+
+/* ------------------------------------------- Button page up ------------------------------------ */
+.btn-up {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background-color: #e0e0ee;
+    border-radius: 10em;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all .3s ease;
+    opacity: .5;
+}
+
+
+.btn-up:hover {
+    background-color: #E68255;
+    color: #fff;
+    opacity: 1;
+}
+.btn-up__img {
+    width: 34px;
+    margin-bottom: 8px;
+}
+
+
+
+  
